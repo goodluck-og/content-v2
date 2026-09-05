@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default theme = Navy Tech. ThemeSwitcher overwrites these at runtime
+   via document.documentElement.style.setProperty(...). */
+:root {
+  --color-ink: #0A1128;
+  --color-teal: #001F54;
+  --color-lime: #1282A2;
+  --color-ember: #034078;
+  --color-cream: #FEFCFB;
+  --background: var(--color-ink);
+  --foreground: var(--color-cream);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
