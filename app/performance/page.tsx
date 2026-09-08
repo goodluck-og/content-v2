@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Sidebar } from "@/components/Sidebar";
-import { Activity, TrendingUp, TimerReset, Target } from "lucide-react";
+import { Activity, TrendingUp, Target } from "lucide-react";
 
 type Stat = {
   label: string;
